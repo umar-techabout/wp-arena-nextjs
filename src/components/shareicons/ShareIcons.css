@@ -1,0 +1,47 @@
+.wpa-share-icons{
+    width: 40px;
+    height: 40px;
+    background-color: var(--wpa-btn-dark-color);
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wpa-share-icons img{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wpa-share-icons-main{
+    gap: 15px;
+}
+.wpa-share-count span{
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 4px;
+    border-color: var(--wpa-btn-dark-color);
+    width: 175px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    text-align: center;
+    line-height: 25px;
+}
+
+.wpa-share-icons:hover{
+    background-color: var(--wpa-primary-color);
+}
+.wpa-share-icons-main{
+    margin-top: 20px;
+}
+.wpa-share-count:hover{
+    background-color: var(--wpa-btn-dark-color);
+    color: white;
+    cursor: pointer;
+}

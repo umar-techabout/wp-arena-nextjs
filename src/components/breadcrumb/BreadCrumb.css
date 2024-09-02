@@ -1,0 +1,23 @@
+.wpa-breadcrumb {
+    display: flex;
+    list-style: none;
+  }
+  
+  .crumb {
+    margin-right: 12px;
+  }
+  .crumb a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  .crumb + .crumb::before {
+    content: '>';
+    margin-right: 12px;
+  }
+ .crumb.crumb-disabled{
+  text-transform: uppercase ;
+  font-weight: var(--wpa-regular-font-weight);
+  color: var(--wpa-btn-dark-color);
+ }

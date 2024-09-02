@@ -1,0 +1,123 @@
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    text-align: center;
+    padding-bottom: 0;
+  }
+  
+  .carousel-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .carousel-item {
+    margin: 0 5px;
+    transition: transform 0.3s;
+    flex: 0 0 20%;
+  }
+  
+  .carousel-container img {
+    max-width: 150px;
+    max-height: 150px;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 5px solid var(--wpa-img-border-color);
+  }
+  
+  .carousel-container .center {
+    transform: scale(1.5);
+    margin: 2rem;
+    opacity: none;
+  }
+  
+  .carousel-container  .opacity {
+    opacity: 0.7;
+  }
+  
+  .carousel-container .end {
+    transform: scale(0.6);
+    margin: -15px;
+  }
+  
+  .carousel-container button {
+    font-size: 24px;
+    padding: 5px 10px;
+    margin: 10px;
+  }
+  .testimonal-main{
+    text-align: center;
+  }
+  .testimonal-main h2{
+    font-weight: var(--wpa-font-weight-600);
+  }
+  .testimonal-main h4 em{
+    color: var(--wpa-primary-color);
+    font-weight: var(--wpa-regular-font-weight);
+  }
+  .testimonal-main{
+    margin-top: 40px;
+  }
+  .ratingstar{
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .ratingstar img{
+    width: 20px;
+    height: 22px;
+    object-fit: contain;
+    border: none;
+  }
+  .description p{
+    line-height: 34px;
+  }
+  .description p span{
+    color: var(--wpa-primary-color);
+    font-weight: var(--wpa-font-weight-700);
+  }
+  .description{
+    position: relative;
+  }
+  .description::before{
+    content: "";
+    position: absolute;
+    background-image: url(data:image/png;base64,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);
+    display: block;
+    width: 300px;
+    height: 300px;
+    background-repeat: no-repeat;
+    text-align: center;
+    /* margin: auto; */
+    left: 50%;
+    transform: translate(-30%, 8%);
+
+  }
+  .carousel-dots {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.dot {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #bbb;
+    transition: background-color 0.3s ease;
+    color: var(--wpa-btn-dark-color);
+    position: relative;
+    z-index: 99;
+}
+
+.dot.active {
+    background-color: var(--wpa-primary-color);
+    border-color: var(--wpa-primary-color);
+}

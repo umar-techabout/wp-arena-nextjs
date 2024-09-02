@@ -1,0 +1,10 @@
+.wpa-patner-icon{
+    width: 160px;
+}
+.wpa-patner-icon img{
+    max-width: 100%;
+}
+.wpa-patners-wrapper{
+    margin-bottom: var(--wpa-content-top-bottom-spacing-30) !important;
+    margin-top: var(--wpa-content-top-bottom-spacing-30) !important;
+}

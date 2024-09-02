@@ -1,0 +1,53 @@
+.wpa-p-text p{
+    font-weight: var(--wpa-regular-font-weight);
+    line-height: 32px;
+    margin-bottom: 15px;
+}
+.wpa-services-boxes .wpa-pro-services-box{
+    padding: 0px !important;
+}
+.wpa-services-boxes .wpa-pro-services-box:hover{
+    background-color: white;
+    color: black;
+}
+.wpa-services-boxes .wpa-pro-services-box{
+    overflow: hidden;
+}
+.wpa-services-boxes .wpa-pro-services-box:hover button{
+    background-color: var(--wpa-btn-dark-color) !important;
+    color: white;
+    border-color: var(--wpa-btn-dark-color);
+}
+.wpa-services-boxes .btn-primary-hover:hover button{
+    background-color: var(--wpa-primary-color) !important;
+    color: white;
+    border-color: var(--wpa-primary-color);
+}
+.wpa-services-boxes .wpa-pro-services-box .wpa-pro-services-box-content-icon{
+    max-width: 550px;
+    height: unset;
+}
+.wpa-services-boxes .wpa-pro-services-box .wpa-pro-services-box-content-icon img{
+    width: 100%;
+}
+.wpa-services-boxes .wpa-pro-services-wrapper.wpa-content-top-bottom-spacing-30{
+    padding-top: 0;
+    padding-bottom: var(--wpa-content-top-bottom-spacing-30);
+}
+.margin-bottom-0 p{
+    margin-bottom: 0;
+}
+.wpa-blogs-descriptions h2{
+    line-height: 0.8;
+    margin-bottom: 20px;
+}
+.wpa-services-boxes .wpa-line-limit-2 p{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    height: 42px;
+}
+.wpa-services-listing-page .wpa-line-limit-2 p{
+    height: 53px;
+}

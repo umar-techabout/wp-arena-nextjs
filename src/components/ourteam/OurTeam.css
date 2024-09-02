@@ -1,0 +1,47 @@
+.wpa-our-team-mian{
+    background-image: url(../../images/wpa-our-team-member.png);
+    padding: 50px 0px;
+    background-repeat: no-repeat;
+}
+.wpa-our-team-mian h2{
+    color: white;
+    margin-bottom: 30px;
+}
+.wpa-our-team-common {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: white;
+    flex: 0 0 100%;
+    border-bottom: 1px solid #e5e5e5;
+}
+.wpa-our-team-thumbnial{
+    max-width: 450px;
+    height: 450px;
+
+}
+.wpa-our-team-thumbnial img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.wpa-our-team h4{
+    color: var(--wpa-primary-color);
+    font-weight: var(--wpa-font-weight-600);
+}
+.wpa-our-team span{
+    color: var(--gray-text-color);
+}
+.wpa-team-content{
+    padding: 20px 30px;
+}
+.btn-primary button{
+    background-color: var(--wpa-primary-color);
+    border-color: var(--wpa-primary-color);
+    margin-top: 40px;
+}
+.btn-primary button:hover{
+    background-color: var(--wpa-btn-dark-color);
+    border-color: var(--wpa-btn-dark-color);
+}
+.wpa-our-team{
+    gap: 15px;
+} 

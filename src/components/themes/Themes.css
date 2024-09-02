@@ -1,0 +1,25 @@
+.wpa-listings .content-right-container {
+    margin: 0px 0px 55px 0px !important;
+}
+.wpa-listings .wpa-blog-list-thumbnail{
+    height: 220px;
+}
+.wpa-listings .wpa-blogs-details{
+    justify-content: space-between;
+    height: 220px;
+} 
+.wpa-listings .wpa-share-icon img{
+    background-color: unset !important;
+}
+
+.wpa-message-icon{
+    position: relative;
+    top: 5px;
+    left: -12px;
+}
+.wpa-message-icon img{
+    width: 30px;
+} 
+.wpa-share-icon img{
+    vertical-align: baseline
+}

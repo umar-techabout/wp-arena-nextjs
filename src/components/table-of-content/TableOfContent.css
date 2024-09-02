@@ -1,0 +1,21 @@
+.wpa-table-of-content{
+    background-image: url(../../assets/images/tableofcontent.png);
+}
+.wpa-table-of-content{
+    padding: var(--wpa-padding-30);
+}
+.wpa-table-of-content .wpa-table-of-content-data ul{
+    padding-left: 0;
+    list-style-type: none;
+    padding-top: var(--wpa-padding-20);
+    list-style-image: url(../../assets/images/table-of-content-list-icon.png);
+    margin-left: 25px;
+    line-height: 32px;
+}
+.wpa-table-of-content .wpa-table-of-content-data ul li{
+    padding-left: 10px;
+    font-size: 20px;
+}
+.wpa-regular-font-weight h5{
+    font-weight: 400;
+}

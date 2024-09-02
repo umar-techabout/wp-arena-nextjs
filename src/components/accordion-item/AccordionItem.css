@@ -1,0 +1,66 @@
+
+.wpa-accordion-item{
+    color: var(--color-white);
+    cursor: pointer;
+    margin-bottom: var(--wpa-padding-30);
+
+}
+.wpa-accordion-title {
+background-color:var(--wpa-btn-dark-color);
+text-transform: uppercase;
+padding: 15px var(--wpa-padding-30);
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+
+}
+.wpa-accordion-title-wrapper h3{
+    font-size: var(--wpa-h3-font-size);
+    font-weight: var(--wpa-regular-font-weight);
+    color: var(--color-white);
+}
+.wpa-accordion-title-wrapper .logo{
+    margin-right: 25px;
+}
+
+.wpa-accordion .wpa-wrapper-sides-spacing {
+    margin: 0px;
+    padding: 0px var(--wpa-padding-30) var(--wpa-padding-30) var(--wpa-padding-30);
+
+}
+.wpa-accordion-content{
+    transition: all 0.5s;
+} 
+
+.wpa-accordion .wpa-coupons-and-deals-box {
+    width: 380px;
+}
+.wpa-accordion-content {
+    transition: max-height 0.3s ease-out;
+    background-color: var(--wpa-secondary-color);
+    border-bottom-left-radius: var(--wpa-hero-input-border-radius);
+    border-bottom-right-radius: var(--wpa-hero-input-border-radius);
+    height: 100%;
+    padding-bottom:var(--wpa-padding-30);
+}
+.wpa-accordion .wpa-coupons-and-deals-wrapper{
+    justify-content: center;
+}
+.wpa-accordion-content.open {
+    height: 100%;
+    transition: max-height 0.3s ease-in;
+}
+.wpa-accordion-title span{
+    font-size: 40px;
+}
+.wpa-accordion h4{
+    font-size: 23px;
+}
+
+.wpa-accordion .wpa-content-top-bottom-spacing-30{
+    padding-top: 15px;
+}
+
+.wpa-accordion-title{
+    margin-bottom: 30px;
+    cursor: pointer;
+}

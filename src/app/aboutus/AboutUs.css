@@ -1,0 +1,73 @@
+.wpa-about-us-image img{
+    width: 100%;
+}
+.wpa-aboutus-experties-icon{
+    width: 90px;
+    height: 90px;
+    background-color: var(--wpa-btn-dark-color);
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex: 0 0 90px;
+    border: 3px solid var(--wpa-img-border-color);
+}
+.wpa-aboutus-experties-icon img{
+    width: auto;
+    
+}
+.wpa-text-color-primary h3{
+    color: var(--wpa-primary-color);
+}
+.wpa-aboutus-experties-main{
+    margin-top: 20px;
+}
+.wpa-aboutus-banner-bg{
+    background-color: var(--wpa-secondary-color);
+    width: 100%;
+    margin: var(--wpa-content-top-bottom-spacing-30) 0;
+    position: relative;
+    background-image: url(../../images/youtube-video-banner.png);
+    background-repeat: no-repeat;
+}
+
+.wpa-about-us-values{
+    border: 8px solid var(--wpa-secondary-color);
+    padding: 30px;
+    border-radius: 100%;
+    width: 330px;
+    height: 330px;
+}
+.wpa-about-us-values img{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 230px;
+    height: 100%;
+    object-fit: contain;
+    margin: auto;
+}
+.wpa-quiz-content.wpa-aboutus-our-values-content{
+    max-width: 76%;
+}
+.wpa-aboutus-mision-list-icon{
+    border: 2px solid var(--wpa-primary-color);
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    flex: 0 0 55px;
+    text-align: center;
+    line-height: 4.6;
+}
+.wpa-aboutus-experties-content  p{
+    margin-bottom: 0 !important;
+}
+.wpa-aboutus-mision-list-icon{
+    margin-bottom: 10px;
+}
+.wpa-aboutus-mision-list-icon img{
+    margin-top: 8px;
+}

@@ -1,0 +1,54 @@
+.wpa-dark-heading h4{
+    background-color: var(--wpa-btn-dark-color);
+    color: white;
+    padding: var(--wpa-padding-20);
+    border-radius: 10px;
+    font-weight: var(--wpa-font-weight-600);
+}
+.wpa-quiz-banner.wpa-no-bg{
+    background-color: unset;
+}
+.wpa-no-bg.wpa-quiz-banner::after{
+    content: unset;
+}
+.wpa-no-bg .wpa-quiz-content{
+    max-width: 65%;
+}
+.wpa-no-bg .wpa-quiz-content p{
+    margin-bottom: 10px;
+}
+.wpa-chart-400{
+    width: 400px;
+}
+.wpa-chart-100{
+    width: 100%;
+    padding: 20px 25px;
+    border: 2px solid var(--wpa-img-border-color);
+    border-radius: 5px;
+    margin: var(--wpa-padding-30) 0;
+}
+.wpa-chart-400 .wpa-graph-heading p:last-child{
+    display: none;
+}
+.wpa-graph-heading{
+    justify-content: space-between;
+    gap: 60px;
+}
+.wpa-graph-heading> p{
+    flex: 1;
+    justify-content: space-between;
+    background-color: var(--wpa-secondary-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.wpa-chart-100 .border-botom{
+    border-bottom: 3px solid var(--wpa-img-border-color);
+    padding-bottom: 20px;
+}
+.wpa-chart-100 #chart{
+    margin-top: 25px;
+}
+.wpa-select select{
+    font-weight: 600 !important;
+    padding: 5px !important;
+}

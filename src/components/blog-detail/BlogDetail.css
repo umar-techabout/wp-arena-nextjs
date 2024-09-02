@@ -1,0 +1,63 @@
+.wpa-blogs-details p{
+    font-weight: var(--wpa-regular-font-weight);
+}
+.wpa-blogs-details p span{
+    color: var(--wpa-primary-color);
+}
+.wpa-blog-content{
+    padding: 10px 0px;
+}
+.wpa-blog-detail-banner img{
+    max-width: 100%;
+    border: 3px solid var(--wpa-img-border-color);
+    border-radius: var(--wpa-services-button-border-radius);
+}
+.wpa-paragraph-text p{
+    line-height: 28px;
+}
+.wpa-margin-top-blog-detail{
+    margin-top: 20px;
+}
+.wpa-blog-details-topics a{
+    margin-right: 10px;
+}
+.wpa-blog-details-topics a{
+    font-weight: 600;
+    color: #000;
+}
+.wpa-popular-blogs-common{
+    flex: 1;
+}
+.wpa-editorial-staff{
+    background-image: url(../../assets/images/tableofcontent.png); 
+}
+.wpa-editorial-staff-content{
+    padding: var(--wpa-padding-30);
+}
+.wpa-editorial-staff-title ul{
+    padding-left: 0;
+    list-style-type: none;
+    padding-top: var(--wpa-padding-20);
+    list-style-image: url(../../assets/images/table-of-content-list-icon.png);
+    margin-left: 25px;
+    line-height: 32px;
+}
+.wpa-editorial-staff-title ul li{
+    padding-left: 10px;
+    font-size: 20px;
+}
+.wpa-tutorial-and-resource-banner{
+    background-color: var(--wpa-primary-color);
+    border-radius: var(--wpa-services-button-border-radius);
+}
+.wpa-tutorial-and-resources-form{
+    margin: var(--wpa-padding-30) 0;
+    text-align: center;
+    color: #fff;
+}
+.wpa-tutorial-and-resources-content h2{
+    color: #fff;
+}
+.wpa-tutorial-and-resources-content p{
+    margin-bottom: 20px;
+}

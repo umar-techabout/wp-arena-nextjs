@@ -1,0 +1,267 @@
+#conference-timeline {
+    position: relative;
+}
+
+#conference-timeline .timeline-start,
+#conference-timeline .timeline-end {
+    display: table;
+    background-color: var(--wpa-btn-dark-color);
+    text-align: center;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-left: 46px;
+    position: absolute;
+}
+
+#conference-timeline .conference-center-line {
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    top: 0;
+    margin-left: -2px;
+    background-color: var(--wpa-btn-dark-color);
+    z-index: -1;
+    left: 54px;
+}
+
+.timeline-article {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: visible;
+    margin: 30px 0;
+}
+
+.timeline-article .content-left-container,
+.timeline-article .content-right-container {
+    margin: 0px 0px 55px 150px;
+}
+
+.timeline-article .timeline-author {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #242424;
+    text-align: right;
+}
+
+.timeline-article .content-left,
+.timeline-article .content-right {
+    position: relative;
+    width: auto;
+}
+
+.timeline-article p {
+    position: relative;
+}
+
+.timeline-article p span.article-number {
+    position: absolute;
+    font-weight: 300;
+    font-size: 44px;
+    top: 10px;
+    left: -60px;
+    color: #00b0bd;
+}
+
+.timeline-article .content-left-container {
+    float: left;
+}
+
+.timeline-article .content-left:before,
+.timeline-article .content-right:before {
+    position: absolute;
+    top: 20px;
+    font-size: 23px;
+    font-family: "FontAwesome";
+    color: #fff;
+}
+
+.timeline-article .content-left:before {
+    content: "\f0da";
+    right: -8px;
+}
+
+.timeline-article .meta-date {
+    position: absolute;
+    top: 40px;
+    width: 115px;
+    height: 115px;
+    margin-left: -31px;
+    color: var(--color-white);
+    border-radius: 100%;
+    border: 5px solid var(--wpa-btn-dark-color);
+    left: 28px;
+    background-color: var(--wpa-btn-dark-color);
+}
+
+.timeline-article .meta-date .date,
+.timeline-article .meta-date .month {
+    display: block;
+    text-align: center;
+}
+
+.meta-date>div {
+    flex-direction: column;
+    height: 100%;
+    border: 2px solid white;
+    border-radius: 100%;
+}
+
+.meta-date>div span {
+    line-height: unset;
+}
+
+.timeline-article .meta-date .date {
+    line-height: 25px;
+    font-weight: var(--wpa-font-weight-700);
+}
+
+.timeline-article .meta-date .month {
+    line-height: 20px;
+    font-weight: var(--wpa-font-weight-700);
+}
+
+.wpa-blogs-details {
+    flex-direction: column;
+}
+
+.relative {
+    position: relative;
+}
+
+.content-right.wpa-flex {
+    align-items: flex-start;
+}
+
+.content-right-container::after {
+    content: "";
+    position: relative;
+    width: 100%;
+    height: 1px;
+    background-color: var(--wpa-img-border-color);
+    display: block;
+    top: 25px;
+
+}
+
+.wpa-blogs-details.wpa-flex {
+    align-items: unset;
+}
+
+.wpa-blog-list-description p {
+    line-height: 32px;
+}
+
+.wpa-blog-list-thumbnail {
+    width: 400px;
+   height: 250px;
+}
+
+.wpa-blog-list-thumbnail img {
+    width: 100%;
+    height: 100%;
+    border-radius: var(--wpa-services-button-border-radius);
+    border: 3px solid var(--wpa-img-border-color);
+}
+
+.wpa-blog-list-posted-by a {
+    text-decoration: none;
+    color: var(--wpa-primary-color);
+}
+
+.wpa-share-icon {
+    position: relative;
+}
+
+.wpa-share-icon img {
+    background-color: var(--wpa-primary-color);
+    border-radius: var(--wpa-button-border-radius);
+    padding: 5px;
+    border-radius: 5px;
+    position: relative;
+    top: 5px;
+    left: 15px;
+}
+
+.timeline-end {
+    position: absolute;
+    bottom: 0px;
+}
+
+.wpa-h3-font-size h3 a {
+    font-size: var(--wpa-h3-font-size);
+    color: var(--wpa-btn-dark-color);
+    text-decoration: none;
+}
+
+.line-limit-2 p {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.wpa-blog-list-title h3 a:hover {
+    color: var(--wpa-primary-color);
+}
+
+/*===== Resonsive Vertical Timeline =====*/
+@media only screen and (max-width: 830px) {
+
+    /* #conference-timeline .timeline-start,
+    #conference-timeline .timeline-end {
+        margin: 0;
+    } */
+
+    /* #conference-timeline .conference-center-line {
+        margin-left: 0;
+        left: 50px;
+    } */
+
+    /* .timeline-article .meta-date {
+        margin-left: 0;
+        left: 20px;
+    } */
+
+    .timeline-article .content-left-container,
+    .timeline-article .content-right-container {
+        max-width: 100%;
+        width: auto;
+        float: none;
+        margin-left: 110px;
+        min-height: 53px;
+    }
+  
+
+    .timeline-article .content-left-container {
+        margin-bottom: 20px;
+    }
+
+    .timeline-article .content-left,
+    .timeline-article .content-right {
+        padding: 10px 25px;
+        min-height: 65px;
+    }
+
+    .timeline-article .content-left:before {
+        content: "\f0d9";
+        right: auto;
+        left: -8px;
+    }
+
+    .timeline-article .content-right:before {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .timeline-article p {
+        margin: 0;
+    }
+    .timeline-article p span.article-number {
+        display: none;
+    }
+}

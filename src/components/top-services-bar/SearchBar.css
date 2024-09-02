@@ -1,0 +1,215 @@
+.wpa-top-servicesbar {
+    background-color: var(--wpa-primary-color);
+    padding-top: var(--wpa-content-top-bottom-spacing);
+    padding-bottom: var(--wpa-content-top-bottom-spacing);
+}
+
+.wpa-services-title {
+    width: 100%;
+}
+
+.wpa-services-title h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: var(--wpa-paragraph-text);
+    font-weight: var(--wpa-font-weight-600);
+    color: var(--color-white);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.wpa-top-services-border {
+    border: 2px solid var(--wpa-primary-light-color);
+    border-radius: var(--wpa-services-button-border-radius);
+
+}
+
+.wpa-services-icon {
+    line-height: 0;
+    padding: 0px 20px;
+    border-right: 2px solid var(--wpa-primary-light-color);
+}
+
+.wpa-services-inner-paddding {
+    padding: 5px 0px;
+}
+
+.wpa-flex-1 {
+    flex: 1;
+}
+
+.wpa-services-gap {
+    gap: var(--wpa-services-gap);
+}
+
+.services-btn-color {
+    background-color: var(--wpa-services-top-bar-color);
+}
+
+a.wpa-services-common {
+    text-decoration: none;
+}
+
+.wpa-services-common:hover {
+    background-color: var(--wpa-btn-dark-color);
+    color: white;
+    transform: 0.4s;
+    border: 2px solid var(--wpa-btn-dark-color)
+}
+
+.wpa-services-title h3 {
+    padding: 0px 10px;
+}
+
+/* servicesbar offcanvas start */
+.services-bar-off-canvas .menu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  bottom: 0;
+  z-index: 1;
+  width: 300px;
+  background: white;
+  color: #444;
+  padding: 40px;
+  transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.services-bar-off-canvas .menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.services-bar-off-canvas .menu li {
+  padding: 12px 0;
+}
+
+.services-bar-off-canvas .menu a {
+  font-size: 1rem;
+  display: inline-block;
+  text-decoration: none;
+  color: #444;
+  line-height: 1.2;
+  position: relative;
+  overflow: hidden;
+  text-transform: uppercase;
+  transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+  position: relative;
+  padding: 2px 0;
+  font-weight: 600;
+}
+.services-bar-off-canvas .menu a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #444;
+  transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+  transform: translate(-100%, 0);
+}
+.services-bar-off-canvas .menu a:hover:before {
+  transform: translate(100%, 0);
+}
+
+.services-bar-off-canvas .menu span {
+  font-weight: 300;
+  margin-right: 5px;
+}
+
+.services-bar-off-canvas .burger {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #0288D1;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  margin: 40px;
+  display: block;
+  z-index: 2;
+  transform-origin: center center;
+  transform: rotate(0) translate(0, 0);
+  border-radius: 50%;
+}
+.services-bar-off-canvas .burger img{
+width: 100%;
+object-fit: contain;
+}
+.services-bar-off-canvas .burger,
+.services-bar-off-canvas .burger i, .services-bar-off-canvas .burger:before, .services-bar-off-canvas .burger:after {
+  transform-origin: 50% 50%;
+  transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.services-bar-off-canvas .burger i {
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.services-bar-off-canvas .burger:before {
+  top: 16px;
+}
+.services-bar-off-canvas .burger:after {
+  bottom: 16px;
+}
+.services-bar-off-canvas .burger:hover:before, .services-bar-off-canvas .burger:hover:after {
+  width: 15px;
+  left: 30px;
+}
+.services-bar-off-canvas .burger:hover:before {
+  top: 20px;
+  transform: rotate(30deg);
+}
+.services-bar-off-canvas .burger:hover:after {
+  bottom: 20px;
+  transform: rotate(-30deg);
+}
+
+.services-bar-off-canvas .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.services-bar-off-canvas.nav-open .menu {
+  left: 0;
+}
+.services-bar-off-canvas.nav-open .burger {
+  transform: rotate(-180deg);
+  left: 300px;
+}
+.services-bar-off-canvas.nav-open .burger i, .services-bar-off-canvas.nav-open .burger:before, .services-bar-off-canvas.nav-open .burger:after {
+  width: 30px;
+  left: 10px;
+}
+.services-bar-off-canvas.nav-open .burger i {
+  transform: translateX(-200%);
+}
+.services-bar-off-canvas.nav-open .burger:before {
+  transform: rotate(-45deg);
+  top: 24px;
+}
+.services-bar-off-canvas.nav-open .burger:after {
+  transform: rotate(45deg);
+  bottom: 24px;
+}
+.services-bar-off-canvas.nav-open .overlay {
+  opacity: 1;
+  visibility: visible;
+}
+.services-bar-off-canvas{
+    position: fixed;
+    left: -45px;
+    z-index: 9999; 
+}
+.services-bar-off-canvas{
+    display: none;
+}
+
+/* servicesbar offcanvas end */

@@ -1,0 +1,149 @@
+.wpa-left-page-content{
+    max-width: 70%;
+    flex: 1;
+}
+.wpa-theme-detail-page-p p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.wpa-right-page-content{
+    max-width: 30%;
+    flex: 1;
+}
+.wpa-detail-page-row{
+    align-items: flex-start !important;
+    gap:var(--wpa-gap-70);
+}
+.wpa-right-page-content button{
+    width: 100%;
+}
+.wpa-background-heading{
+    background-color: var(--wpa-btn-dark-color);
+    padding: 15px;
+    border-radius: 5px;
+}
+.wpa-background-heading h4{
+    color: var(--color-white);
+    text-align: center;
+
+}
+.wpa-theme-information-list{
+    background-color:#edeef0;
+    padding:15px var( --wpa-padding-20);
+    border-radius: 5px;
+    margin: 12px 0px;
+}
+.wpa-theme-information-list h5{
+    font-size: var(--wpa-h5-font-size);
+    color: var(--wpa-btn-dark-color);
+}
+
+.wpa-theme-information-list .wpa-regular-font-weight{
+    font-size: var(--wpa-h5-font-size);
+}
+
+.wpa-theme-information{
+    background-color:#f9fbff;
+    padding: 10px var(--wpa-padding-30);
+}
+
+
+
+/* responsive */
+
+@media screen and (max-width: 1199px) {
+
+    .wpa-detail-page-row {
+        gap:var(--wpa-gap-40);
+    }
+    .wpa-left-page-content {
+        max-width: 60%;
+    }
+    .wpa-right-page-content {
+        max-width: 40%;
+    }
+    .wpa-admin-reply{
+        gap:var(--wpa-gap-40);
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .wpa-detail-page-row {
+        flex-direction: column;
+    }
+    .wpa-left-page-content {
+        max-width: 100%;
+        width: 100%;
+    }
+    .wpa-right-page-content {
+        max-width: 100%;
+        width: 100%;
+    }
+    .wpa-admin-reply{
+        gap:var(--wpa-gap-40);
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+  /* comments-section-css*/
+  .wpa-user-comments{
+    flex-direction: column;
+  }
+  .wpa-border {
+    border-bottom: 1px solid #e9e9e9;
+    width: 100%;
+    text-align: center;
+    padding: 25px 0px;
+  }
+  .wpa-admin-reply{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .wpa-comments-wrapper::before {
+    content:none;
+}
+.wpa-user-comments{
+    gap: 20px;
+}
+.wpa-admin-reply{
+    margin-left: 50px;
+}
+.wpa-button-reply {
+    text-align: center;
+}
+.wpa-comments-common {
+    margin-bottom: 0px;
+}
+.wpa-comments-common-content .wpa-flex {
+    margin-bottom: 15px;
+}
+.wpa-button-reply {
+    margin-top: 20px;
+}
+}
+
+@media screen and (max-width: 575px) {
+    .wpa-share-icons-main {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    /* comments-components */
+    .wpa-admin-details{
+    flex-wrap: wrap;
+    }
+    .wpa-right-menu-buttons button {
+        margin: 15px;
+    }
+   .wpa-form-group{
+    flex-direction: column;
+   }
+}
+
+@media screen and (max-width: 480px) {
+    .wpa-services-gap {
+        gap: 6px;
+    }
+}
+/* End-responsive */

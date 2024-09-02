@@ -1,0 +1,50 @@
+.wpa-search-bar-input-wrapper.wpa-start-now-for-free{
+    background-color: var(--wpa-secondary-color) !important;
+    border-radius:4px !important;
+    padding-left: var(--wpa-padding-30);
+    margin-top: var(--wpa-padding-30);
+
+}
+
+.wpa-search-bar-input-wrapper.wpa-start-now-for-free input{
+    background-color: transparent !important;
+    border: transparent;
+    display: block;
+    font-size: var(--wpa-paragraph-text);
+    color: var(--wpa-text-dark);
+    text-transform: capitalize;
+    font-weight:var( --wpa-font-weight-600);
+    display: block;
+    width: 100%;
+    height: 50px;
+
+}
+.wpa-search-bar-input-wrapper.wpa-start-now-for-free input::placeholder{
+    font-family:"Open Sans", sans-serif ;
+    color: var(--gray-text-color);
+}
+.wpa-search-bar-input-wrapper input:focus {
+    outline: none;
+}
+.wpa-search-bar-input-wrapper input:focus {
+    outline: none;
+}
+
+.wpa-search-bar-input-wrapper .wpa-search-btn{
+    background-color:var(--wpa-text-dark);
+    color: var(--color-white);
+    border: transparent;
+    padding: 12px 55px;
+    text-transform: uppercase;
+    border-radius: var(--wpa-services-button-border-radius);
+    font-size:var(--wpa-paragraph-text);
+    font-weight: var(--wpa-font-weight-600);
+    line-height: 28px;
+    cursor: pointer;
+}
+.wpa-search-bar-input-wrapper{
+    justify-content: flex-start !important;
+}
+.wpa-search-bar-input-wrapper form{
+    flex: 1 !important;
+}

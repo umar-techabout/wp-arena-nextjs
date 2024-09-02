@@ -1,0 +1,58 @@
+.wpa-form-padding{
+    padding: var(--wpa-padding-30);
+}
+.form-heading{
+    background-color: var(--wpa-btn-dark-color);
+    padding: 20px 0px;
+    color: white;
+    text-align: center;
+    border-radius: var(--wpa-services-button-border-radius);
+}
+.form-heading h3{
+    color: white;
+} 
+.form-section{
+    margin-top: var(--wpa-content-top-bottom-spacing-30);
+    margin-bottom: var(--wpa-content-top-bottom-spacing-30);
+}
+.wpa-input-padding-20{
+    padding: var(--wpa-padding-20);
+}
+.wpa-form-group input, .wpa-form-group textarea, .wpa-form-group select{
+    border:1px solid transparent;
+    flex: 1;
+    border-radius: var(--wpa-services-button-border-radius);
+    background-color:#e6f4fb;
+    height: 60px;
+}
+.wpa-form-group input::placeholder, .wpa-form-group select, .wpa-form-group textarea::placeholder{
+    color: black;
+    font-weight: 500;
+}
+.wpa-form-inner{
+    padding-top:var(--wpa-content-top-bottom-spacing-30) ;
+}
+.wpa-ad-type label{
+    margin-right: 30px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.wpa-margin-top h3{
+    margin-top: var(--wpa-content-top-bottom-spacing-30);
+    margin-bottom: var(--wpa-content-top-bottom-spacing-30);
+}
+.wpa-ad-type input{
+    width: 20px;
+    height: 20px;
+
+}
+.wpa-padding-bottom-20px{
+    padding-bottom: 20px;
+}
+.wpa-block{
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}

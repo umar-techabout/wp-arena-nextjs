@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+:root{
+ --wpa-wrapper-sides-spacing: 100px;
+ --wpa-content-top-bottom-spacing-30: 30px;
+ --wpa-content-top-bottom-spacing: 20px;
+ --wpa-section-top-bottom-spacing: 60px;
+ --wpa-padding-40: 40px;
+ --wpa-padding-30: 30px;
+ --wpa-padding-20: 20px;
+ --wpa-h1-font-size:50px;
+ --wpa-h2-font-size:48px;
+ --wpa-h3-font-size:30px;
+ --wpa-font-size:45px;
+ --wpa-h4-font-size:25px;
+ --wpa-h5-font-size:20px;
+ --wpa-paragraph-text: 16px;
+ --wpa-line-height-h1: 60px;
+ --wpa-gap-70:70px;
+ --wpa-gap-10:10px;
+ --wpa-menu-items-gap: 30px;
+ --wpa-gap-20: 20px;
+ --wpa-services-gap: 15px;
+ --wpa-gap-xxl: 50px;
+ --wpa-gap-40: 40px;
+ --wpa-header-logo: 190px;
+ --wpa-regular-font-weight: 500;
+ --wpa-font-weight-600:600;
+ --wpa-font-weight-700:700;
+ --wpa-button-border-radius:3px;
+ --wpa-services-button-border-radius:5px;
+ --wpa-hero-input-border-radius: 8px;
+ --wpa-primary-color: #2980b9;
+ --wpa-primary-light-color: #6aa6ce;
+ --wpa-text-dark: #000;
+ --color-white: #fff ;
+ --wpa-services-top-bar-color: #2a78ab;
+ --wpa-secondary-color: #ebf1ff;
+ --wpa-btn-dark-color: #333333;
+ --gray-text-color: #58595d;
+ --wpa-img-border-color: #f0f2f3;
+ --wpa-gray-border-box:#f7f7f7;
+ --wpa-color-sky: #daedf6;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+body, h1,h2,h3,h4,h5,h6,p,span{
+  font-family: "Open Sans", sans-serif;
+}
+.wpa-h2-font-size h2{
+  font-size: var(--wpa-h2-font-size);
+  color: var(--wpa-btn-dark-color);
+}
+.wpa-h3-font-size h3{
+  font-size: var(--wpa-h3-font-size);
+  color: var(--wpa-btn-dark-color);
+}
+.wpa-font-weight-600 h3{
+  font-weight: var(--wpa-font-weight-600);
+}
+.wpa-font-weight-600 h2{
+  font-weight: var(--wpa-font-weight-600);
+}
+.wpa-h4-font-size h4{
+  font-size: var(--wpa-h4-font-size);
+}
+.wpa-font-weight-600 h4{
+  font-weight: var(--wpa-font-weight-600);
+}
+.wpa-font-weight-600 h5{
+  font-weight: var(--wpa-font-weight-600);
+}
+.wpa-h5-font-size h5{
+  font-size: var(--wpa-h5-font-size);
+}
+.wpa-wrapper-sides-spacing{
+  margin: 0px 100px;
+}
+.wpa-section-top-bottom-spacing{
+  margin-top: var(--wpa-section-top-bottom-spacing);
+  margin-bottom: var(--wpa-section-top-bottom-spacing);
+}
+.wpa-regular-font-weight h4{
+  font-weight: var(--wpa-regular-font-weight);
+}
+.wpa-list-style-type-none ul{
+  list-style-type: none;
+}
+.wpa-anchor-underline-none a{
+  text-decoration: none;
+}
+.wpa-parahraph-text p, .wpa-parahraph-text ul li a, .wpa-parahraph-text span {
+  font-family: "Open Sans", sans-serif;
+  font-size: var(--wpa-paragraph-text);
+  color: var(--wpa-paragraph-text);
+}
+.wpa-paragraph-text p a{
+ color: var(--wpa-primary-color);
+ text-decoration: none;
+}
+.wpa-flex{
+  display: flex;
+  align-items: center;
+}
+.wpa-content-center{
+  justify-content: center;
+}
+.wpa-content-top-bottom-spacing{
+  padding-top: var(--wpa-content-top-bottom-spacing);
+  padding-bottom: var(--wpa-content-top-bottom-spacing)
+}
+.wpa-gap-10{
+  gap: var(--wpa-gap-10);
+}
+.wpa-menu-items-gap{
+  gap: var(--wpa-menu-items-gap);
+}
+.wpa-gap-70{
+  gap: var(--wpa-gap-70);
+}
+.wpa-gap-xxl{
+  gap: var(--wpa-gap-xxl);
+}
+.wpa-gap-40{
+  gap: 40px;
+}
+.wpa-space-between{
+  justify-content: space-between;
+}
+.wpa-width-100{
+  width: 100%;
+}
+.wpa-regular-font-weight p , .wpa-regular-font-weight a{
+  font-weight: var(--wpa-regular-font-weight);
+}
+.wpa-paragraph-text p{
+  font-size: var(--wpa-paragraph-text);
+}
+.gray-text-color p{
+  color: var(--gray-text-color);
+}
+.wpa-font-weight-600 p, .wpa-font-weight-600 span{
+  font-weight: 600;
+}
+.wp-view-more-btn{
+  text-align: center;
+}
+.wp-view-more-btn button{
+  width: 170px;
+  height: 45px;
+  font-family: "Open Sans", sans-serif;
+  font-size: var(--wpa-paragraph-text);
+  border: 2px solid var(--wpa-btn-dark-color);
+  text-transform: uppercase;
+  font-weight: var(--wpa-font-weight-700);
+  border-radius: var(--wpa-button-border-radius);
+  background-color: var(--wpa-btn-dark-color);
+  cursor: pointer;
+  color: var(--color-white);
+}
+.btn-primary-hover button:hover{
+  background-color: var(--wpa-primary-color);
+  border-color: var(--wpa-primary-color);
+}
+.wpa-gap-20{
+  gap: 20px;
+}
+.btn-dark button{
+  width: 170px;
+  height: 45px;
+  font-family: "Open Sans", sans-serif;
+  font-size: var(--wpa-paragraph-text);
+  border: 2px solid var(--wpa-btn-dark-color);
+  text-transform: uppercase;
+  font-weight: var(--wpa-font-weight-700);
+  border-radius: var(--wpa-button-border-radius);
+  background-color: var(--wpa-btn-dark-color);
+  cursor: pointer;
+  color: var(--color-white);
+}
+.btn-dark-hover button:hover{
+  background-color: var(--wpa-btn-dark-color);
+  border-color: var(--wpa-btn-dark-color);
+}
+.wpa-text-center{
+  text-align: center;
+}
+.wpa-button-center{
+  margin: 0 auto;
+}
+.secondary-background{
+  background-color: var(--wpa-secondary-color);
+}
+.wpa-padding-30{
+  padding-left: var(--wpa-padding-30);
+  padding-right: var(--wpa-padding-30);
+}
+.text-color-primary{
+  color: var(--wpa-primary-color);
+}
+.wpa-button-center button{
+  margin-left: 0px;
+}
+.single-line-text-h2-line-height h2{
+  line-height: 0.8;
+  margin-bottom: 20px;
+}
+.wpa-btn-dark-color a{
+  color: var(--wpa-btn-dark-color);
+}
+.wpa-btn-dark-color h4{
+  color: var(--wpa-btn-dark-color);
+}
+.wpa-padding-top-30 {
+  padding-top: var(--wpa-padding-30);
+}
+.wpa-margin-top-30{
+  margin-top: var(--wpa-padding-30);
+}
+.wpa-left-right-padding{
+  padding-left: var(--wpa-padding-20);
+  padding-right: var(--wpa-padding-20) ;
+}
+.wpa-color-sky{
+  background-color: var(--wpa-color-sky);
+}
+.wpa-btn-left{
+  text-align: left;
+}
+.wpa-font-weight-500 button{
+  font-weight: 500;
+}
+.wpa-pro-services-content {
+  text-align: center;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.wpa-content-top-bottom-spacing-30 {
+  padding-top: var(--wpa-content-top-bottom-spacing-30);
+  padding-bottom: var(--wpa-content-top-bottom-spacing-30);
+}
+.wpa-pro-services-content p {
+  font-weight: var(--wpa-regular-font-weight);
+  line-height: 32px;
+  text-align: center;
+}
+/* loader */
+.wpa-loader-main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.wpa-loader{
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  border-top: 5px solid #292929;
+  border-right: 5px solid #efefef;
+  border-bottom: 5px solid #efefef;
+  border-left: 5px solid #efefef;
+  border-radius: 100px;
+  animation: spin 1s infinite linear;
+}
+.wpa-content-end{
+  display: flex;
+  justify-content: end;
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.line-limit-4 p{
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.line-limit-2 h3 { 
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.line-limit-1 h2 { 
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+p.wpa-error{
+  font-weight: 700;
+  font-size: 18px;
+  margin: 80px 0px;
+  text-align: center;
+  color: red;
+}
+
+
+
+
