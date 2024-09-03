@@ -1,5 +1,3 @@
-// pages/posts/[postSlug].js
-
 import '../../../src/wordpress-style.css';
 import { gql } from '@apollo/client';
 import client from '../../../lib/apollo-client'; 
