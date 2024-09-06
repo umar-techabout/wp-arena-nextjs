@@ -39,7 +39,9 @@ const CouponsAndDealsFaqs = ({
     : data;
 
   return (
-    <section className="wpa-faqs">
+    <>
+    <BreadCrumb/>
+        <section className="wpa-faqs">
       <div className="wpa-wrapper-sides-spacing">
         <div className="wpa-accordion">
           {filteredData.map((item, index) => (
@@ -66,6 +68,7 @@ const CouponsAndDealsFaqs = ({
         </div>
       </div>
     </section>
+    </>
   );
 };
 

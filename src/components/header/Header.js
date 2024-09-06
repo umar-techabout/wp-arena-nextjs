@@ -17,6 +17,7 @@ const Header = () => {
     if (query.trim()) {
       router.push(`/searchresult?query=${encodeURIComponent(query)}`);
     }
+    setQuery('');
   };
 
   return (

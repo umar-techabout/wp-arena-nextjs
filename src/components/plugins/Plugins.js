@@ -52,37 +52,42 @@ const Plugins = ({ posts, pageCount, slug = '', ButtonText, isShowBreadCrumb = t
           </div>
         )}
 
-        <div className="timeline-article wpa-themes-blogs">
-          {posts.map((post) => (
-            <div className='relative' key={post.id}>
-              <div className="content-right-container">
-                <div className="content-right wpa-flex wpa-gap-40">
-                  <div>
-                    <div className='wpa-blog-list-thumbnail'>
-                      <Image height={200} width={200} src={post.featuredImage?.node?.sourceUrl} alt={post.featuredImage?.node?.altText || post.title} />
-                    </div>
-                  </div>
-                  <div className='wpa-blogs-details wpa-flex wpa-h3-font-size'>
-                    <div>
-                      <div className='wpa-blog-list-posted-by wpa-paragraph-text wpa-font-weight-600'>
-                        <span>Recent updated on <Link href="#">{new Date(post.date).toLocaleDateString()}</Link><i className='wpa-share-icon wpa-message-icon'></i></span>
-                      </div>
-                      <div className='wpa-blog-list-title'>
-                        <h3><Link href={`/${post.slug}`} dangerouslySetInnerHTML={{ __html: post.title }} /></h3>
-                      </div>
-                      <div className='wpa-blog-list-description wpa-paragraph-text line-limit-2'>
-                        <p dangerouslySetInnerHTML={{ __html: post.excerpt }} />
-                      </div>
-                    </div>
-                    <div className="wp-view-more-btn btn-primary-hover wpa-btn-left wpa-font-weight-500">
-                      <button type="button">{ButtonText ? "PLUGINS" : "THEMES"}</button>
-                    </div>
-                  </div>
-                </div>
+<div className="timeline-article wpa-themes-blogs">
+  {posts?.length > 0 ? (
+    posts.map((post) => (
+      <div className='relative' key={post.id}>
+        <div className="content-right-container">
+          <div className="content-right wpa-flex wpa-gap-40">
+            <div>
+              <div className='wpa-blog-list-thumbnail'>
+                <Image height={200} width={200} src={post.featuredImage?.node?.sourceUrl} alt={post.featuredImage?.node?.altText || post.title} />
               </div>
             </div>
-          ))}
+            <div className='wpa-blogs-details wpa-flex wpa-h3-font-size'>
+              <div>
+                <div className='wpa-blog-list-posted-by wpa-paragraph-text wpa-font-weight-600'>
+                  <span>Recent updated on <Link href="#">{new Date(post.date).toLocaleDateString()}</Link><i className='wpa-share-icon wpa-message-icon'></i></span>
+                </div>
+                <div className='wpa-blog-list-title'>
+                  <h3><Link href={`/${post.slug}`} dangerouslySetInnerHTML={{ __html: post.title }} /></h3>
+                </div>
+                <div className='wpa-blog-list-description wpa-paragraph-text line-limit-2'>
+                  <p dangerouslySetInnerHTML={{ __html: post.excerpt }} />
+                </div>
+              </div>
+              <div className="wp-view-more-btn btn-primary-hover wpa-btn-left wpa-font-weight-500">
+                <button type="button">{ButtonText ? "PLUGINS" : "THEMES"}</button>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+    ))
+  ) : (
+    <p>No posts available.</p> // You can show a message or handle the empty state here
+  )}
+</div>
+
 
         {/* {posts.length > 11 && <Pagination pageCount={pageCount} handlePageClick={() => {}} />} */}
       </section>
