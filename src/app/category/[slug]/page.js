@@ -1,12 +1,10 @@
 import React from 'react';
 import { gql } from '@apollo/client';
-import client from '../../../../lib/apollo-client'; // Adjust the import path based on your setup
+import client from '../../../../lib/apollo-client';
 import BreadCrumb from '@/components/breadcrumb/BreadCrumb';
 import Timeline from '@/components/timeline/Timeline';
-import Themes from '@/components/themes/Themes'; // Adjust the path as needed
-import Plugins from '@/components/plugins/Plugins'; // Adjust the path as needed
-
-// Define the GraphQL query
+import Themes from '@/components/themes/Themes'; 
+import Plugins from '@/components/plugins/Plugins'; 
 const GET_POSTS_BY_CATEGORY_SLUG = gql`
   query GetPostsByCategorySlug($categorySlug: String!) {
     posts(where: { categoryName: $categorySlug }) {
@@ -46,6 +44,18 @@ export async function fetchPostsByCategorySlug(slug) {
   }
 }
 
+// Export dynamic metadata
+export async function generateMetadata({ params }) {
+  const { slug } = params;
+  const capitalizedSlug = slug.charAt(0).toUpperCase() + slug.slice(1);
+
+  return {
+    title: `${capitalizedSlug} - WPArena`,
+    description: `Browse the latest posts in the ${capitalizedSlug} category at WPArena.`,
+  };
+}
+
+// Page component
 export default async function Page({ params }) {
   const { slug } = params;
   const posts = await fetchPostsByCategorySlug(slug);
