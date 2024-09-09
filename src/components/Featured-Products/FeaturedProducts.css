@@ -61,5 +61,10 @@ a.wpa-featured-products-box{
     color: black;
 }
 .wpa-pro-services-content.wpa-paragraph-text p{
-    font-weight: 600;
+    font-weight: 500;
+    color: #333;
+}
+.wpa-pro-services-content{
+    padding-left: 10px;
+    padding-right: 10px;
 }

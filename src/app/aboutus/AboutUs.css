@@ -23,6 +23,7 @@
 }
 .wpa-aboutus-experties-main{
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 .wpa-aboutus-banner-bg{
     background-color: var(--wpa-secondary-color);
@@ -31,6 +32,9 @@
     position: relative;
     background-image: url(../../images/youtube-video-banner.png);
     background-repeat: no-repeat;
+}
+.wpa-aboutus-experties-main .wpa-aboutus-expertiescommon{
+    margin-bottom: 10px;
 }
 
 .wpa-about-us-values{
@@ -70,4 +74,7 @@
 }
 .wpa-aboutus-mision-list-icon img{
     margin-top: 8px;
+}
+.wpa-margin-negative{
+    margin-top: -35px;
 }

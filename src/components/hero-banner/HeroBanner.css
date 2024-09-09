@@ -74,7 +74,7 @@
 .wpa-hero-wrapper::before{
     position: absolute;
     content: "";
-    /* background-image: url(../../assets/images/homebanner-watermark.png); */
+    background-image: url(../../images/homebanner-watermark.png);
     width: 100%;
     height: 100%;
     display: block;

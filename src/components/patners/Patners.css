@@ -8,3 +8,33 @@
     margin-bottom: var(--wpa-content-top-bottom-spacing-30) !important;
     margin-top: var(--wpa-content-top-bottom-spacing-30) !important;
 }
+/* moving patners from right to left */
+
+/* Define keyframes for the animation */
+@keyframes slideLeft {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  /* Apply animation to the partner images wrapper */
+  .wpa-patners-wrapper {
+    overflow: hidden; /* Hide overflow to keep the animation contained */
+    white-space: nowrap; /* Prevent wrapping of items */
+    position: relative;
+  }
+  
+  .wpa-patners-wrapper .wpa-patner-icon {
+    display: inline-block;
+    animation: slideLeft 10s linear infinite; /* Adjust duration and timing as needed */
+  }
+  
+  /* Adjust styling as needed */
+  .wpa-patners-wrapper img {
+    height: auto;
+    width: auto;
+  }
+  

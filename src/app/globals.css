@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap'); */
+
 :root{
  --wpa-wrapper-sides-spacing: 100px;
  --wpa-content-top-bottom-spacing-30: 30px;
@@ -45,10 +47,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 body, h1,h2,h3,h4,h5,h6,p,span{
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif !important;
+}
+body{
+  font-family: "Open Sans", sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h1{
+  font-weight: 600 !important;
 }
 .wpa-h2-font-size h2{
   font-size: var(--wpa-h2-font-size);
@@ -95,7 +104,7 @@ body, h1,h2,h3,h4,h5,h6,p,span{
 .wpa-parahraph-text p, .wpa-parahraph-text ul li a, .wpa-parahraph-text span {
   font-family: "Open Sans", sans-serif;
   font-size: var(--wpa-paragraph-text);
-  color: var(--wpa-paragraph-text);
+  color: #333;
 }
 .wpa-paragraph-text p a{
  color: var(--wpa-primary-color);
@@ -155,7 +164,7 @@ body, h1,h2,h3,h4,h5,h6,p,span{
   font-size: var(--wpa-paragraph-text);
   border: 2px solid var(--wpa-btn-dark-color);
   text-transform: uppercase;
-  font-weight: var(--wpa-font-weight-700);
+  font-weight: var(--wpa-font-weight-600);
   border-radius: var(--wpa-button-border-radius);
   background-color: var(--wpa-btn-dark-color);
   cursor: pointer;
@@ -175,7 +184,7 @@ body, h1,h2,h3,h4,h5,h6,p,span{
   font-size: var(--wpa-paragraph-text);
   border: 2px solid var(--wpa-btn-dark-color);
   text-transform: uppercase;
-  font-weight: var(--wpa-font-weight-700);
+  font-weight: var(--wpa-font-weight-600);
   border-radius: var(--wpa-button-border-radius);
   background-color: var(--wpa-btn-dark-color);
   cursor: pointer;
@@ -299,7 +308,12 @@ p.wpa-error{
   text-align: center;
   color: red;
 }
-
-
-
-
+.wpa-margin-top-10{
+  margin-top: 12px;
+}
+.wpa-blog-list-title  h3{
+  opacity: 0.9;
+}
+.wpa-pro-services-box-content-title h2{
+  font-weight: 600;
+}

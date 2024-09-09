@@ -1,5 +1,5 @@
 .wpa-right-menu-buttons.timeline-filter-tabs button{
-    margin-left: 0px;
+  margin-left: 0px;
 }
 .wpa-line{
 content: "";
@@ -11,35 +11,38 @@ display: block;
 top: 0px;
 }
 .timeline-filter-tabs a{
-    width: 170px;
-    height: 45px;
-    font-family: "Open Sans", sans-serif;
-    font-size: var(--wpa-paragraph-text);
-    font-weight: var(--wpa-regular-font-weight);
-    border: 2px solid var(--wpa-text-dark);
-    text-transform: uppercase;
-    font-weight: var(--wpa-font-weight-700);
-    border-radius: var(--wpa-button-border-radius);
-    background-color: transparent;
-    cursor: pointer;
-    text-decoration: none;
-    text-decoration: none;
-    /* display: block; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: unset;
+  width: 170px;
+  height: 45px;
+  font-family: "Open Sans", sans-serif;
+  font-size: var(--wpa-paragraph-text);
+  font-weight: var(--wpa-regular-font-weight);
+  border: 2px solid var(--wpa-text-dark);
+  text-transform: uppercase;
+  font-weight: var(--wpa-font-weight-700);
+  border-radius: var(--wpa-button-border-radius);
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  text-decoration: none;
+  /* display: block; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: unset;
+  opacity: 0.9;
 }
 .timeline-filter-tabs a:hover{
-    background-color: var(--wpa-btn-dark-color);
-    border-color: var(--wpa-btn-dark-color);
-    color: white;
+  background-color: var(--wpa-btn-dark-color);
+  border-color: var(--wpa-btn-dark-color);
+  color: white;
 }
-  
-  .timeline-filter-tabs button.active {
-    background-color: var(--wpa-btn-dark-color); 
-    color: white; 
-  }
-  .wpa-right-menu-buttons.timeline-filter-tabs button{
-    font-weight: 600;
-  }
+
+.timeline-filter-tabs button.active {
+  background-color: var(--wpa-btn-dark-color); 
+  color: white !important; 
+  font-weight: 500 !important;
+  opacity: 1;
+}
+.wpa-right-menu-buttons.timeline-filter-tabs button{
+  font-weight: 600;
+}

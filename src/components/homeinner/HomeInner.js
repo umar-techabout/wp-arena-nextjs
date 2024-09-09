@@ -10,6 +10,7 @@ import ProServices from '../pro-services/ProServices';
 import FeaturedProducts from '../Featured-Products/FeaturedProducts';
 import CouponsAndDeals from '../coupons-and-deals/CouponsAndDeals';
 import Listing from '../listing/Listing';
+import '../../app/Media.css'
 // import '../styles/App.css'; // Adjust the path as needed
 
 const Home = () => {

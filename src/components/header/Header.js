@@ -1,24 +1,42 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import HeaderLogo from "../../images/wp-arena-logo.svg";
 import SearchIcon from "../../images/search-icon.png";
-import { API_BASE_URL } from "@/apiConfig";
 import "./Header.css";
 
 const Header = () => {
   const router = useRouter();
   const [query, setQuery] = useState("");
+  const [isHeaderOpen, setIsHeaderOpen] = useState(false); // State for burger menu
 
   const handleSearch = (e) => {
     e.preventDefault();
     if (query.trim()) {
       router.push(`/searchresult?query=${encodeURIComponent(query)}`);
     }
-    setQuery('');
+    setQuery("");
   };
+
+  // Toggle the menu open/close state
+  const handleBurgerClick = () => {
+    setIsHeaderOpen(!isHeaderOpen);
+  };
+
+  useEffect(() => {
+    if (isHeaderOpen) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
+
+    // Cleanup the class when the component unmounts
+    return () => {
+      document.body.classList.remove("overflow-hidden");
+    };
+  }, [isHeaderOpen]);
 
   return (
     <section>
@@ -96,15 +114,22 @@ const Header = () => {
 
             {/* mobile menu start */}
             <div className="menuButton wpa-mobile-menu">
-              <input type="checkbox" id="navcheck" role="button" title="menu" />
+              <input
+                type="checkbox"
+                id="navcheck"
+                role="button"
+                title="menu"
+                onChange={handleBurgerClick}
+                checked={isHeaderOpen}
+              />
               <label htmlFor="navcheck" aria-hidden="true" title="menu">
-                <span className="burger">
+                <span className="burger" onClick={handleBurgerClick}>
                   <span className="bar">
                     <span className="visuallyhidden">Menu</span>
                   </span>
                 </span>
               </label>
-              <ul id="menu" className="menuNav">
+              <ul id="menu" className={`menuNav ${isHeaderOpen ? "open" : ""}`}>
                 <li>
                   <Link href="/category/news" passHref>
                     News
