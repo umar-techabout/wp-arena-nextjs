@@ -17,6 +17,22 @@ export const GET_SERVICES = gql`
     }
   }
 `;
+export const GET_DEALS = gql`
+  query GetDeals {
+    deals {
+      nodes {
+        databaseId
+        title 
+        content
+        featuredImage {
+          node {
+            sourceUrl
+          }
+        }
+      }
+    }
+  }
+`;
 
 
 export const GET_ALL_POSTS = gql`

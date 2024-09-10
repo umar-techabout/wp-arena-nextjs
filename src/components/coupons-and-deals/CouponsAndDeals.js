@@ -1,4 +1,4 @@
-'use client'
+
 import React, { useState, useEffect } from 'react';
 import BlueHost from "../../images/wpa-bluehost.png";
 import './CouponsAndDeals.css';

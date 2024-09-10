@@ -1,4 +1,3 @@
-'use cliet'
 import React, { useEffect, useState } from 'react';
 import './Listing.css';
 import Image from 'next/image';

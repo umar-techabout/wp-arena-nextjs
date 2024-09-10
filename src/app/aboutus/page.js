@@ -7,9 +7,6 @@ import AboutUsOurValuesIcon from "../../images/wpa-aboutus-our-values.png";
 import AboutUsOurVision from "../../images/wpa-aboutus-vision.png";
 import AboutUsOurmissionListIcon1 from "../../images/our-mission-list-icon.png";
 import './AboutUs.css';
-// import YoutubeVideo from '../youtubevideo/YoutubeVideo';
-// import OurTeam from '../../../components/ourteam/OurTeam';
-// import Testimonial from '../../../components/testimonial/Testimonial';
 import WpaSupportIcon from '../../images/wpa-support.png'
 import BreadCrumb from '@/components/breadcrumb/BreadCrumb';
 import OurTeam from '@/components/ourteam/OurTeam';
