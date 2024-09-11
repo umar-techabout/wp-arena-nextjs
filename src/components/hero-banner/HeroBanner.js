@@ -2,6 +2,7 @@ import Image from 'next/image';
 import React, {useState} from 'react';
 import wp_arena_top_banner from '../../images/wp-arena-tp-banner.png';
 import './HeroBanner.css';
+
 // import { API_BASE_URL } from '../../apiConfig';
 
 const HeroBanner = () => {

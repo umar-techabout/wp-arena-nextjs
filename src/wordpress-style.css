@@ -1056,6 +1056,7 @@ margin-bottom: 0;
   font-weight: bold;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s;
+
 }
 
 .copy-.wpa-custom-style button:hover {
@@ -3204,4 +3205,14 @@ visibility: visible !important;
 .entry-meta-.wpa-custom-style button:hover::after {
   opacity: 1;
   visibility: visible;
+}
+.wpa-custom-style{
+  padding: 100px;
+
+}
+.wpa-custom-img{
+  display: block;
+  max-width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 15px;
 }

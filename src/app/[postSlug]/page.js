@@ -3,6 +3,7 @@ import { gql } from '@apollo/client';
 import client from '../../../lib/apollo-client'; 
 import BreadCrumb from '@/components/breadcrumb/BreadCrumb';
 import Comments from '@/components/comments/Comments';
+import Image from 'next/image';
 
 const GET_POST_BY_SLUG = gql`
   query GetPostBySlug($postSlug: String!) {
@@ -11,6 +12,12 @@ const GET_POST_BY_SLUG = gql`
       title
       content
       excerpt
+              featuredImage {
+          node {
+            sourceUrl
+            altText
+          }
+        }
       comments {
         nodes {
           id
@@ -73,6 +80,7 @@ export default async function PostDetail({ params }) {
       <BreadCrumb />
       <div className='wpa-custom-style'>
         <h1>{post.title}</h1>
+        <Image className='wpa-custom-img' width={1080} height={1080} src={post.featuredImage?.node?.sourceUrl}/>
         <div className='wpa-wrapper-sides-spacing' dangerouslySetInnerHTML={{ __html: post.content }} />
       </div>
       <Comments comments={post.comments.nodes} postId={post.id} />
