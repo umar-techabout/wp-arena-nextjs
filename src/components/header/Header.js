@@ -10,7 +10,7 @@ import "./Header.css";
 const Header = () => {
   const router = useRouter();
   const [query, setQuery] = useState("");
-  const [isHeaderOpen, setIsHeaderOpen] = useState(false); // State for burger menu
+  const [isHeaderOpen, setIsHeaderOpen] = useState(false);
 
   const handleSearch = (e) => {
     e.preventDefault();
@@ -20,7 +20,6 @@ const Header = () => {
     setQuery("");
   };
 
-  // Toggle the menu open/close state
   const handleBurgerClick = () => {
     setIsHeaderOpen(!isHeaderOpen);
   };
@@ -32,7 +31,6 @@ const Header = () => {
       document.body.classList.remove("overflow-hidden");
     }
 
-    // Cleanup the class when the component unmounts
     return () => {
       document.body.classList.remove("overflow-hidden");
     };
@@ -56,63 +54,36 @@ const Header = () => {
           <div className="wpa-flex wpa-space-between wpa-width-100 wpa-flex-end-on-sm">
             <nav className="wpa-parahraph-text wpa-list-style-type-none wpa-anchor-underline-none wpa-desktop-menu">
               <ul className="wpa-flex wpa-menu-items-gap wpa-regular-font-weight">
-                <li>
-                  <Link href="/category/news" passHref>
-                    News
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/category/tutorials" passHref>
-                    Tutorials
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/category/reviews" passHref>
-                    Reviews
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/category/comparisons" passHref>
-                    Comparison
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/category/resources" passHref>
-                    Resources
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/category/collections" passHref>
-                    Collection
-                  </Link>
-                </li>
+                <li><Link href="/category/news" passHref>News</Link></li>
+                <li><Link href="/category/tutorials" passHref>Tutorials</Link></li>
+                <li><Link href="/category/reviews" passHref>Reviews</Link></li>
+                <li><Link href="/category/comparisons" passHref>Comparison</Link></li>
+                <li><Link href="/category/resources" passHref>Resources</Link></li>
+                <li><Link href="/category/collections" passHref>Collection</Link></li>
               </ul>
             </nav>
             <div className="wpa-right-menu-buttons">
               <div className="wpa-header-search-bar wpa-flex">
-                <div className="wpa-flex">
-                  <form className="wpa-flex" onSubmit={handleSearch}>
-                    <input
-                      type="text"
-                      placeholder="Search"
-                      value={query}
-                      onChange={(e) => setQuery(e.target.value)}
+                <form className="wpa-flex" onSubmit={handleSearch}>
+                  <input
+                    type="text"
+                    placeholder="Search"
+                    value={query}
+                    onChange={(e) => setQuery(e.target.value)}
+                  />
+                  <button className="head-btn" type="submit">
+                    <Image
+                      width={16}
+                      height={16}
+                      objectFit="cover"
+                      src={SearchIcon}
+                      alt="Search Icon"
                     />
-                    <button className="head-btn" type="submit">
-                      <Image
-                        width={16}
-                        height={16}
-                        objectFit="cover"
-                        src={SearchIcon}
-                        alt="Search Icon"
-                      />
-                    </button>
-                  </form>
-                </div>
+                  </button>
+                </form>
               </div>
             </div>
 
-            {/* mobile menu start */}
             <div className="menuButton wpa-mobile-menu">
               <input
                 type="checkbox"
@@ -123,46 +94,21 @@ const Header = () => {
                 checked={isHeaderOpen}
               />
               <label htmlFor="navcheck" aria-hidden="true" title="menu">
-                <span className="burger" onClick={handleBurgerClick}>
-                  <span className="bar">
-                    <span className="visuallyhidden">Menu</span>
-                  </span>
+                <span className="burger">
+                  <span className="bar"></span>
+                  <span className="bar"></span>
+                  <span className="bar"></span>
                 </span>
               </label>
               <ul id="menu" className={`menuNav ${isHeaderOpen ? "open" : ""}`}>
-                <li>
-                  <Link href="/category/news" passHref>
-                    News
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/category/tutorials" passHref>
-                    Tutorials
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/category/reviews" passHref>
-                    Reviews
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/category/comparisons" passHref>
-                    Comparison
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/category/resources" passHref>
-                    Resources
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/category/collections" passHref>
-                    Collection
-                  </Link>
-                </li>
+                <li><Link href="/category/news" passHref>News</Link></li>
+                <li><Link href="/category/tutorials" passHref>Tutorials</Link></li>
+                <li><Link href="/category/reviews" passHref>Reviews</Link></li>
+                <li><Link href="/category/comparisons" passHref>Comparison</Link></li>
+                <li><Link href="/category/resources" passHref>Resources</Link></li>
+                <li><Link href="/category/collections" passHref>Collection</Link></li>
               </ul>
             </div>
-            {/* mobile menu end */}
           </div>
         </div>
       </header>

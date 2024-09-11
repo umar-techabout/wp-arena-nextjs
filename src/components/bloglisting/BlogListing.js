@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
-// import { Link } from "react-router-dom";
 import Link from 'next/link';
-// import wpamessage from "../../../images/wpa-message.png";
 import wpamessage from '../../images/wpa-message.png'
-// import Pagination from '../pagination/Pagination';
 import './BlogListing.css';
 import Image from 'next/image'
 
