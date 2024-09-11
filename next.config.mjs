@@ -1,16 +1,15 @@
-import OptimizeCSSAssetsPlugin from 'css-minimizer-webpack-plugin';
-
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-  webpack: (config, { dev, isServer }) => {
-    if (!dev && !isServer) {
-      // Disable CSS minification
-      config.optimization.minimizer = config.optimization.minimizer.filter(
-        (plugin) => !(plugin instanceof OptimizeCSSAssetsPlugin)
-      );
-    }
-
-    return config;
-  },
-};
-
-export default nextConfig;
+    images: {
+      remotePatterns: [
+        {
+          protocol: 'https',
+          hostname: 'stg-wparena-staging.kinsta.cloud',
+          pathname: '/**',
+        },
+      ],
+    },
+  };
+  
+  export default nextConfig;
+  

@@ -19,7 +19,6 @@
     "react-paginate": "^8.2.0"
   },
   "devDependencies": {
-    "css-minimizer-webpack-plugin": "^7.0.0",
     "eslint": "^8",
     "eslint-config-next": "14.2.5"
   }
