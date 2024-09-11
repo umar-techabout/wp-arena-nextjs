@@ -3,7 +3,7 @@ import Header from '@/components/header/Header';
 import Footer from '@/components/footer/Footer'; 
 import ServicesBar from '@/components/top-services-bar/ServicesBar';
 import './globals.css'; 
-// import './Media.css'
+import './Media.css'
 import Patners from '@/components/patners/Patners';
 export const metadata = {
   title: 'Wp-Arena',

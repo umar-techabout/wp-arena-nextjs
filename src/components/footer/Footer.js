@@ -10,7 +10,7 @@ import YoutubeIcon from "../../images/wap-youtube.png";
 import GitLabIcon from "../../images/wpa-git-lab.png";
 
 import './Footer.css';
-import '../../app/Media.css'
+// import '../../app/Media.css'
 import Link from 'next/link';
 const Footer = () => {
   return (
