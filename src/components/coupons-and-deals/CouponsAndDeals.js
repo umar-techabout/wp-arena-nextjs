@@ -1,4 +1,5 @@
 
+'use client'
 import React, { useState, useEffect } from 'react';
 import BlueHost from "../../images/wpa-bluehost.png";
 import './CouponsAndDeals.css';
@@ -9,7 +10,7 @@ import Image from 'next/image';
 
 const CouponsAndDeals = ({ showDis, butonLabel = "true" }) => {
     const [deals, setDeals] = useState([]); // Initialize as an empty array
-    const [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
 
     useEffect(() => {

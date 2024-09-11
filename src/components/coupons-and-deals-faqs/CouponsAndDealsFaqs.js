@@ -1,3 +1,4 @@
+'use client'
 import React, { useState, useEffect } from "react";
 import "./CouponsAndDealsFaqs.css";
 // import pluginsLogo from "../../assets/images/web-plugin-logo.png";

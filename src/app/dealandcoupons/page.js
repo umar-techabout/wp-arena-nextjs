@@ -1,95 +1,53 @@
-'use client'
-import React, { useState, useEffect } from "react";
-import "./CouponsAndDealsFaqs.css";
-import pluginsLogo from "@/images/web-plugin-logo.png";
-import sassLogo from "@/images/saas-logo.png";
-import Themes from "@/components/themes/Themes";
-import Plugins from "@/components/plugins/Plugins";
-import BreadCrumb from "@/components/breadcrumb/BreadCrumb";
-import client from "../../../lib/apollo-client"; // Adjust the path as needed
-import { gql } from '@apollo/client';
-
-// Define your queries
-const GET_POSTS_BY_CATEGORY_SLUG_PLUGINS = gql`
-  query GetPostsByCategorySlugPlugins($categorySlug: String!, ) {
-    posts(where: { categoryName: $categorySlug }, ) {
-      nodes {
-        id
-        slug
-        title
-        excerpt
-        date
-        featuredImage {
-          node {
-            sourceUrl
-            altText
-          }
-        }
-      }
-    }
-  }
-`;
-
-const GET_POSTS_BY_CATEGORY_SLUG_THEMES = gql`
-  query GetPostsByCategorySlugThemes($categorySlug: String!, ) {
-    posts(where: { categoryName: $categorySlug }, ) {
-      nodes {
-        id
-        slug
-        title
-        excerpt
-        date
-        featuredImage {
-          node {
-            sourceUrl
-            altText
-          }
-        }
-      }
-    }
-  }
-`;
+'use client';
+import React, { useState, useEffect } from 'react';
+import './CouponsAndDealsFaqs.css';
+import pluginsLogo from '@/images/web-plugin-logo.png';
+import sassLogo from '@/images/saas-logo.png';
+import Themes from '@/components/themes/Themes';
+import Plugins from '@/components/plugins/Plugins';
+import BreadCrumb from '@/components/breadcrumb/BreadCrumb';
+import client from '../../../lib/apollo-client'; // Adjust the path as needed
+import { GET_POSTS_BY_CATEGORY_SLUG_PLUGINS, GET_POSTS_BY_CATEGORY_SLUG_THEMES } from '../../app/pages/api/allApi';
 
 const CouponsAndDealsFaqs = ({
   filterTitle,
-  showSearchBar = "true",
+  showSearchBar = 'true',
   showLogos = true,
   disableClick = false,
-  showDescriptionCondition = " true ",
+  showDescriptionCondition = ' true ',
 }) => {
   const [openSections, setOpenSections] = useState({});
   const [pluginsData, setPluginsData] = useState([]);
   const [themesData, setThemesData] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  // Function to fetch plugins data
-  const fetchPluginsData = async () => {
-    const { data } = await client.query({
-      query: GET_POSTS_BY_CATEGORY_SLUG_PLUGINS,
-      variables: { categorySlug: "plugins", page: 1 },
-    });
-    setPluginsData(data.posts.nodes);
+  // Fetch both themes and plugins data concurrently
+  const fetchData = async () => {
+    try {
+      const [pluginsResponse, themesResponse] = await Promise.all([
+        client.query({
+          query: GET_POSTS_BY_CATEGORY_SLUG_PLUGINS,
+          variables: { categorySlug: 'plugins' },
+        }),
+        client.query({
+          query: GET_POSTS_BY_CATEGORY_SLUG_THEMES,
+          variables: { categorySlug: 'themes' },
+        }),
+      ]);
+
+      setPluginsData(pluginsResponse.data.posts.nodes);
+      setThemesData(themesResponse.data.posts.nodes);
+    } catch (error) {
+      console.error('Error fetching data:', error);
+    } finally {
+      setLoading(false); // Set loading to false after fetching data
+    }
   };
 
-  // Function to fetch themes data
-  const fetchThemesData = async () => {
-    const { data } = await client.query({
-      query: GET_POSTS_BY_CATEGORY_SLUG_THEMES,
-      variables: { categorySlug: "themes", page: 1 },
-    });
-    setThemesData(data.posts.nodes);
-  };
-
-  // UseEffect to fetch data when sections are opened
+  // Fetch data when the component mounts
   useEffect(() => {
-    if (openSections["plugins"]) {
-      fetchPluginsData();
-    }
-    if (openSections["themes"]) {
-      fetchThemesData();
-    }
-    setLoading(false);
-  }, [openSections]);
+    fetchData();
+  }, []);
 
   const toggleSection = (title) => {
     setOpenSections((prev) => ({
@@ -101,17 +59,15 @@ const CouponsAndDealsFaqs = ({
   const data = [
     {
       logo: pluginsLogo,
-      title: "plugins",
+      title: 'plugins',
     },
     {
       logo: sassLogo,
-      title: "themes",
+      title: 'themes',
     },
   ];
 
-  const filteredData = filterTitle
-    ? data.filter((item) => item.title === filterTitle)
-    : data;
+  const filteredData = filterTitle ? data.filter((item) => item.title === filterTitle) : data;
 
   return (
     <>
@@ -131,10 +87,10 @@ const CouponsAndDealsFaqs = ({
                 </div>
                 {openSections[item.title] && (
                   <section id="conference-timeline" className="wpa-listings">
-                    {item.title === "plugins" ? (
+                    {item.title === 'plugins' ? (
                       <Plugins
                         posts={pluginsData}
-                        pageCount={0} // You can update pagination logic as needed
+                        pageCount={0}
                         isShowBreadCrumb={false}
                         IshwoPluginContent={false}
                         ButtonText={false}
