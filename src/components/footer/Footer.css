@@ -54,6 +54,7 @@
     padding: 0px 28px;
     border-right: 1px solid white;
     text-align: center;
+    line-height: 1;
 }
 .wpa-footer-menu ul li:first-child{
     padding-left: 0px;

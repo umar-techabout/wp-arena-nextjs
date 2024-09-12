@@ -14,10 +14,11 @@
 }
 .wpa-quiz-content ul li{
     font-weight: var(--wpa-font-weight-700);
-    /* background: url('../../assets/images/arrow.png') no-repeat left center; */
+    background: url('../../images/arrow.png') no-repeat left top 8px;
     background-size: 27px 13px;
     padding-left: 45px;
     margin-bottom: 5px;
+    color: #333;
 }
 .wpa-content-top-bottom-spacing-30{
     padding-top: var(--wpa-content-top-bottom-spacing-30);
@@ -27,7 +28,7 @@
     margin-right: 20px;
 }
 .wpa-quiz-content button{
-    margin-top: 5px;
+    margin-top: 10px;
 }
 .wpa-quiz-banner::after{
     content: "";
@@ -50,4 +51,7 @@
     margin-top: var(--wpa-content-top-bottom-spacing-30);
     margin-bottom: var(--wpa-content-top-bottom-spacing-30);
     padding: unset;
+}
+.wpa-quiz-content p{
+    padding: 8px 0px;
 }

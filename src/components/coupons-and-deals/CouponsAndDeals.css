@@ -66,3 +66,6 @@ a.wpa-coupons-and-deals-box{
 .wpa-coupons-and-deals-wrapper{
     justify-content: center !important;
 }
+.wpa-accordion-content .wpa-coupons-and-deals-box-content{
+    padding-left: 30px;
+}

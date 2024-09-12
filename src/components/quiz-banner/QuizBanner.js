@@ -2,7 +2,6 @@ import Image from 'next/image'
 import React from 'react';
 import QuizBannerImg from "../../images/quiz-banner.png";
 import "./QuizBanner.css";
-import './QuizBanner.css'
 const QuizBanner = () => {
   return (
     <>
