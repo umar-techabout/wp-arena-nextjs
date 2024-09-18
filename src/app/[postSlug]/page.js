@@ -1,10 +1,10 @@
-import '../../../src/wordpress-style.css';
+
 import { gql } from '@apollo/client';
 import client from '../../../lib/apollo-client'; 
 import BreadCrumb from '@/components/breadcrumb/BreadCrumb';
 import Comments from '@/components/comments/Comments';
 import Image from 'next/image';
-
+import '../../../src/wordpress-style.css';
 const GET_POST_BY_SLUG = gql`
   query GetPostBySlug($postSlug: String!) {
     postBy(slug: $postSlug) {

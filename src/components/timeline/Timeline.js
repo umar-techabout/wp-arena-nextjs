@@ -43,7 +43,7 @@ const Timeline = ({ posts }) => {
                     <div className="wpa-blogs-details wpa-flex wpa-h3-font-size">
                       <div className="wpa-blog-list-title line-limit-2">
                         <h3>
-                          <Link href={`/${post.slug}`}>{post.title}</Link>
+                          <Link suspense = 'true' href={`/${post.slug}`}>{post.title}</Link>
                         </h3>
                       </div>
                       <div className="wpa-blog-list-posted-by wpa-content-top-bottom-spacing wpa-paragraph-text wpa-font-weight-600">

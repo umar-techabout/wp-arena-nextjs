@@ -54,12 +54,12 @@ const Header = () => {
           <div className="wpa-flex wpa-space-between wpa-width-100 wpa-flex-end-on-sm">
             <nav className="wpa-parahraph-text wpa-list-style-type-none wpa-anchor-underline-none wpa-desktop-menu">
               <ul className="wpa-flex wpa-menu-items-gap wpa-regular-font-weight">
-                <li><Link href="/category/news" passHref>News</Link></li>
-                <li><Link href="/category/tutorials" passHref>Tutorials</Link></li>
-                <li><Link href="/category/reviews" passHref>Reviews</Link></li>
-                <li><Link href="/category/comparisons" passHref>Comparison</Link></li>
-                <li><Link href="/category/resources" passHref>Resources</Link></li>
-                <li><Link href="/category/collections" passHref>Collection</Link></li>
+                <li><Link suspense='true' href="/category/news" passHref>News</Link></li>
+                <li><Link suspense='true' href="/category/tutorials" passHref>Tutorials</Link></li>
+                <li><Link suspense='true' href="/category/reviews" passHref>Reviews</Link></li>
+                <li><Link suspense='true' href="/category/comparisons" passHref>Comparison</Link></li>
+                <li><Link suspense='true' href="/category/resources" passHref>Resources</Link></li>
+                <li><Link suspense='true' href="/category/collections" passHref>Collection</Link></li>
               </ul>
             </nav>
             <div className="wpa-right-menu-buttons">

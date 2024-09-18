@@ -7,7 +7,7 @@ const Loader = () => {
     // Simulate a loading delay for demonstration purposes
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000); // Adjust the timeout duration as needed
+    }, 1000); // Adjust the timeout duration as needed
 
     return () => clearTimeout(timer);
   }, []);
