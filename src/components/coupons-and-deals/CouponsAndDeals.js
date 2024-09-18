@@ -52,7 +52,7 @@ const CouponsAndDeals = ({ showDis, butonLabel = "true" }) => {
                             <Link href={"/"} className='wpa-coupons-and-deals-box wpa-flex' key={elem.id}>
                                 <div className='border'>
                                     <div className='wpa-coupons-and-deals-box-icon'>
-                                        <Image height={300} width={300} src={elem.featured_image} alt={elem.title.rendered} />
+                                        <Image height={300} width={300} src={elem.featured_image} alt="deals-and-coupons" />
                                     </div>
                                 </div>
                                 <div className='wpa-coupons-and-deals-box-content'>

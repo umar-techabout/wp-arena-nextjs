@@ -1,0 +1,19 @@
+# Allow all bots to crawl the website
+User-agent: *
+Allow: /
+
+# Block specific paths (adjust as needed)
+Disallow: /admin
+Disallow: /api
+Disallow: /checkout
+Disallow: /user-settings
+
+# Block specific file types (e.g., .json or .txt files)
+Disallow: /*.json$
+Disallow: /*.txt$
+
+# Block a specific file
+Disallow: /private-info.html
+
+# Sitemap location
+Sitemap: https://stg-wparena-staging.kinsta.cloud/
